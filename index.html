@@ -1,0 +1,517 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>yipVincent</title><meta name="author" content="yipVincent"><meta name="copyright" content="yipVincent"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="yipVincent">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="yipVincent">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yipvincent.github.io/images/icon.png">
+<meta property="article:author" content="yipVincent">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yipvincent.github.io/images/icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: yipVincent","link":"链接: ","source":"来源: yipVincent","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'yipVincent',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-06-24 22:26:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/customfont.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://yipvincent.github.io/images/icon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/2000/03/23/%E4%BD%9C%E5%93%81%E9%9B%86/"><i class="fa-fw fas fa-book"></i><span> 作品集</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 系列</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/indextopimg.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="yipVincent"><span class="site-name">yipVincent</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/2000/03/23/%E4%BD%9C%E5%93%81%E9%9B%86/"><i class="fa-fw fas fa-book"></i><span> 作品集</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 系列</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">yipVincent</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/yipvincent" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:yipvincent@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/06/23/Prompt%20engineering%E2%80%94%E2%80%94%E5%90%B4%E6%81%A9%E8%BE%BE%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%89/" title="Prompt engineering——吴恩达课程笔记（案例篇）"><img class="post-bg" src="https://img.phonandroid.com/2023/02/ChatGPT-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Prompt engineering——吴恩达课程笔记（案例篇）"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/23/Prompt%20engineering%E2%80%94%E2%80%94%E5%90%B4%E6%81%A9%E8%BE%BE%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%89/" title="Prompt engineering——吴恩达课程笔记（案例篇）">Prompt engineering——吴恩达课程笔记（案例篇）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-23T10:37:55.000Z" title="发表于 2023-06-23 18:37:55">2023-06-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/chatgpt/">chatgpt</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/chatgpt/">chatgpt</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Prompt-engineering/">Prompt engineering</a></span></div><div class="content">（转载知乎笔记：不留行）
+就目前的应用而言，ChatGPT是Prompt的艺术。ChatGPT能够发挥多少能力，很大程度上取决于Prompt的质量。最近，著名AI科学家吴恩达联合OpenAI的工程师制作了一个简短的ChatGPT Prompt教程，讲授了撰写Prompt的两个关键原则和相关应用，以帮助开发者基于OpenAI的API快速构建自己的应用程序。  
+以下就课程提到的两大原则和相关应用，进行一些实操案例的整理。  
+
+
+撰写Prompt的两个关键原则：1. 给出清晰和明确的指令（1）使用分隔符清晰地将Prompt输入的不同部分分开（2）要求结构化的输出，如输出为json、html、xml等格式（3）检查内容是否满足任务所需的条件，拒绝无效或非法的内容（4）给出几个任务的示例（Few-shot）
+2. 给模型一些思考的时间（1）告知模型完成任务所需的步骤（2）指导模型在得出结论之前先自行解决问题  
+
+原则一：给出清晰和明确的指令使用分隔符清晰地将Prompt输入的不同部分分开Prompt通常包含一些指令和待处理的内容，可以用分隔符将指令和内容明确分开。这里的分隔符可以是三个引号 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/06/12/Prompt%20engineering%E2%80%94%E2%80%94%E5%90%B4%E6%81%A9%E8%BE%BE%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="Prompt engineering——吴恩达课程笔记"><img class="post-bg" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.3uFelC6IsJVEOXxrnOGWIAHaE8?pid=ImgDet&amp;rs=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Prompt engineering——吴恩达课程笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/06/12/Prompt%20engineering%E2%80%94%E2%80%94%E5%90%B4%E6%81%A9%E8%BE%BE%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="Prompt engineering——吴恩达课程笔记">Prompt engineering——吴恩达课程笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-06-12T09:37:55.000Z" title="发表于 2023-06-12 17:37:55">2023-06-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/chatgpt/">chatgpt</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/chatgpt/">chatgpt</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Prompt-engineering/">Prompt engineering</a></span></div><div class="content">（转载知乎笔记：暖暖内含光）
+最近，吴恩达在 deeplearning.ai 平台上发布了一门关于 LLM 提示工程的课程。
+课程很简短，只有 9 集，时长一个半小时，B 站上有中文字幕：【中文完整版全9集】ChatGPT提示工程。不过还是推荐利用 deeplearning 平台提供的 jupyter notebook 实战一下：
+
+实战地址   
+
+本文简单做个总结，以供日后查询。  
+
+
+前言：RLHF大语言模型（LLM）在语料库上训练之后，并不能达到如 ChatGPT 那般令人惊艳的效果。本质上 LLM 的能力就是给定一段文字，进行续写。举个例子：给它一段文字 What is the capital of France?，LLM 可能会续写 What is the largest city in France?。这个续写是符合逻辑的，但却不是我们想要的——它并没有回答问题。 我们把这个阶段叫做 Base LLM  
+要让 LLM 显得更加智能，以人类能接受的方式生成回答，ChatGPT 用到了 RLHF (Reinforcement learning with human fee ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/03/23/kpower/2020%E4%B8%8A%E6%B5%B7%E4%BD%93%E5%8D%9A%E4%BC%9A%E4%BA%91%E5%B1%95%E7%9B%B4%E6%92%AD%E6%B4%BB%E5%8A%A8/" title="2020上海体博会云展直播活动"><img class="post-bg" src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/css.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020上海体博会云展直播活动"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/23/kpower/2020%E4%B8%8A%E6%B5%B7%E4%BD%93%E5%8D%9A%E4%BC%9A%E4%BA%91%E5%B1%95%E7%9B%B4%E6%92%AD%E6%B4%BB%E5%8A%A8/" title="2020上海体博会云展直播活动">2020上海体博会云展直播活动</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-23T08:21:55.000Z" title="发表于 2022-03-23 16:21:55">2022-03-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%B4%BB%E5%8A%A8%E7%AD%96%E5%88%92/">活动策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92/">品牌策划</a></span></div><div class="content">
+
+
+
+概览项目背景中国国际体育用品博览会（体博会），一直都是康乐佳进行年度新品发布以及经销商沟通的重要平台。2020年的上海体博会，可以预见在疫情的背景下，线下展会的宣传效果将大打折扣。在国内外经销商不能到达现场的情况下，如何高效、直观地把参展目的进行有效传达，是本次活动需要解决的核心问题。
+我的工作
+前期策略分析，确定展会活动的执行策略和形式，输出活动方案与推广方案；
+与设计部门配合，完成展会现场宣传物料以及线上推广物料的设计工作；
+配合展会现场的活动执行工作，协调主播、拍摄团队以及主办方，保障活动顺利进行；
+配合自媒体公众号推广进行文案撰写、现场拍摄等工作。
+
+亮点本次活动的主要亮点和创新点有：
+
+康乐佳首次举办云展直播活动，最大范围地把展会效果覆盖到了国内外经销商队伍，把疫情影响降到了最低；
+首次尝试进行产品直播，为平台旗舰店（天猫、京东）引流，当天店铺曝光及询单数据均为历史最佳；
+直播进入抖音上海地区当天同城热榜，为现场展会吸引大量人气。
+
+数据表现
+活动期间直播间观看人数峰值8W+，直播平台（抖音+天猫+一直播）吸引了超65万人次在线观看，进入上海同城热榜；
+
+
+part1 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/08/08/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E4%BA%A7%E5%93%81%E6%8A%98%E9%A1%B5%E8%AE%BE%E8%AE%A1/" title="西贝来悦产品折页设计"><img class="post-bg" src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/xiangqingye1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西贝来悦产品折页设计"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/08/08/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E4%BA%A7%E5%93%81%E6%8A%98%E9%A1%B5%E8%AE%BE%E8%AE%A1/" title="西贝来悦产品折页设计">西贝来悦产品折页设计</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-08T09:19:25.000Z" title="发表于 2021-08-08 17:19:25">2021-08-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6/">西贝来悦</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92/">品牌策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E5%88%92/">产品策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6/">西贝来悦</a></span></div><div class="content">
+
+
+我的工作：承担产品卖点提炼、产品宣传包装、平台旗舰店产品详情页梳理、产品创意性表达等。
+
+
+亚麻籽油
+
+礼享系列
+
+
+
+
+
+
+
+
+
+孕婴童系列
+
+
+
+
+
+
+
+高山蜂巢蜜
+
+
+
+
+
+明前茶
+
+小罐装
+
+
+
+
+
+
+
+
+
+哥窑瓶
+
+
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/08/05/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5%E8%AE%BE%E8%AE%A1/" title="西贝来悦产品详情页设计"><img class="post-bg" src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/xiangqingye1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西贝来悦产品详情页设计"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/08/05/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5%E8%AE%BE%E8%AE%A1/" title="西贝来悦产品详情页设计">西贝来悦产品详情页设计</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-05T10:11:57.000Z" title="发表于 2021-08-05 18:11:57">2021-08-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6/">西贝来悦</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92/">品牌策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E5%88%92/">产品策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6/">西贝来悦</a></span></div><div class="content">
+
+
+我的工作：承担产品卖点提炼、产品宣传包装、平台旗舰店产品详情页梳理、产品创意性表达等。
+
+
+亚麻籽油
+
+
+
+高山蜂巢蜜
+
+
+
+明前茶
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/07/31/kpower/KSMILE%20K7%E6%96%B0%E5%93%81%E7%BA%BF%E4%B8%8A%E6%8E%A8%E5%B9%BF/" title="KSMILE K7新品线上推广"><img class="post-bg" src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/K7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="KSMILE K7新品线上推广"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/31/kpower/KSMILE%20K7%E6%96%B0%E5%93%81%E7%BA%BF%E4%B8%8A%E6%8E%A8%E5%B9%BF/" title="KSMILE K7新品线上推广">KSMILE K7新品线上推广</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-31T06:05:12.000Z" title="发表于 2021-07-31 14:05:12">2021-07-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E5%88%92/">产品策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%96%B0%E5%93%81%E6%8E%A8%E5%B9%BF/">新品推广</a></span></div><div class="content">
+
+
+
+项目背景该项目旨在为KSMILE品牌的家用走步机在天猫和京东旗舰店开拓线上新市场，提高品牌知名度。该产品是一款创新的家用健身器材，具有易收纳、静音、安全等特点。疫情期间，家用健身器材的热度高涨，我们希望通过拍摄创意视频和平面海报的方式来展示该产品的特点和优势，吸引目标人群的注意力并促进销售。  
+
+
+推广目标包括提高品牌知名度、开拓线上新市场、为天猫和京东旗舰店引流；  
+推广内容以拍摄创意视频和平面海报为主；  
+推广渠道主要是社交媒体广告、电视广告、以及针对目标人群的网络推广等。
+
+
+
+part1 策划思路
+
+结合康乐佳已有的自媒体资源和内容生产能力，我们确立了以下的执行思路：
+长内容+短内容  
+
+
+长内容以公众号图文形式为主，技术产品介绍、企业活动、新闻发布，要求翔实准确；
+短内容以抖音、视频号平台为主，品牌推广、新品曝光、结合时事热点，重创意高频次。
+
+
+
+
+
+
+明确内容创作方向  
+
+
+产品创意短视频：以社交平台为主，增加产品&amp;品牌曝光；
+重点产品推广视频：从专业角度对年度新品&amp;解决方案进行整体的形象概念包装；
+企业文化&amp;品牌推广视频：企业生 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/06/23/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92%E5%8F%8A%E5%BD%A2%E8%B1%A1%E5%A1%91%E9%80%A0%E7%AD%96%E7%95%A5/" title="西贝来悦品牌策划及形象塑造策略"><img class="post-bg" src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/westgood/logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西贝来悦品牌策划及形象塑造策略"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/23/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92%E5%8F%8A%E5%BD%A2%E8%B1%A1%E5%A1%91%E9%80%A0%E7%AD%96%E7%95%A5/" title="西贝来悦品牌策划及形象塑造策略">西贝来悦品牌策划及形象塑造策略</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-23T04:11:55.000Z" title="发表于 2021-06-23 12:11:55">2021-06-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6/">西贝来悦</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92/">品牌策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E5%88%92/">产品策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6/">西贝来悦</a></span></div><div class="content">概览
+
+西北原生态（有机）健康食品精选+体验式O2O平台原生态的健康有机食品系列  
+故土人，家乡情,来自大西北的游子，充满着对故乡黄土地深深的眷恋以及对家乡天然美物的怀念。带着这份执念，我们把纯甄的西北产物带到您的面前，与您一起分享这份大自然对西北人民的馈赠。  
+
+
+项目背景该项目发起团队是清华朋商会的学员，本着服务同学、服务深圳、服务清华的宗旨，以功能性健康食品+西部生态旅游为主题，普及现代营养学发展的概念化认知，打造了一个有关健康饮食文化培养、功能性食品概念化推广的清华同学自己的交流平台。西贝来悦是隶属于该平台的一个产品品牌。
+项目需求发起人团队拥有自主的产品供应链，包括原料生产地与加工厂，拥有成熟的生产流程和技术。团队需要建立一个全新的品牌，以利用这些优势来打造具有差异化和高附加值的产品，更好地为平台会员服务。  
+建立产品品牌，有以下考虑：
+
+
+建立良好的品牌形象，促进规范化的平台运营，以此带动产品销售；
+建立独立、有序的线上销售渠道；
+探索新的业界合作模式。
+
+
+我的工作
+
+前期市场信息搜集、调研、企业人员访谈；
+品牌策略分析与平台架构搭建，输出品牌策略方案；
+根据品牌策 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/05/28/kpower/%E5%85%A8%E6%96%B0%E7%BD%91%E7%BB%9C%E5%93%81%E7%89%8C%E8%A7%84%E5%88%92%E5%8F%8A%E5%BD%A2%E8%B1%A1%E5%A1%91%E9%80%A0%E7%AD%96%E7%95%A5/" title="康乐佳全新网络品牌规划及形象塑造策略"><img class="post-bg" src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/KS%E5%BE%AE%E7%AC%91%E8%BF%90%E5%8A%A8-51.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="康乐佳全新网络品牌规划及形象塑造策略"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/28/kpower/%E5%85%A8%E6%96%B0%E7%BD%91%E7%BB%9C%E5%93%81%E7%89%8C%E8%A7%84%E5%88%92%E5%8F%8A%E5%BD%A2%E8%B1%A1%E5%A1%91%E9%80%A0%E7%AD%96%E7%95%A5/" title="康乐佳全新网络品牌规划及形象塑造策略">康乐佳全新网络品牌规划及形象塑造策略</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-05-28T00:21:30.000Z" title="发表于 2021-05-28 08:21:30">2021-05-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92/">品牌策划</a></span></div><div class="content">
+
+
+
+概览
+
+项目需求康乐佳现有品牌架构主要服务于“外贸订单生产+国内贴牌生产”的大工厂模式，自有品牌KPOWER、KONLEGA、konlega主要由经销商代理进行市场销售，线下以品牌专卖店为主，形成完善的全国销售网络；线上渠道没有专营店，以工厂供货为主。
+建立全新产品品牌，有以下考虑：  
+
+
+打入国内家用健身器材市场，完善康乐佳的大众市场产品线；
+建立独立、有序的线上销售渠道；
+完善康乐佳国内经销商体系，建立线上经销商队伍；
+探索新的业界合作模式。
+
+
+我的工作
+
+前期市场信息搜集、调研、企业人员访谈；
+品牌策略分析与新品牌架构搭建，为品牌方案提供决策支持；
+与设计部门配合，完成品牌VI视觉体系的设计工作；
+
+
+
+part1 策略分析
+
+1.1现时品牌与产品架构康乐佳目前的品牌架构是其十多年外贸业务发展的结果。在面对B端客户以及线下渠道时，这样的品牌架构可以辅助业务高效运转。在面对大众市场与电商渠道时，则会存在以下局限：  
+
+
+自主设计能力不足，无法针对特定的用户需求，快速反应推出爆款单品；
+产品线更多的是商用和大客户产品，针对家用和个人用户的产品较少；
+品牌体系与经销商体系 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2020/10/18/kpower/%E5%BA%B7%E4%B9%90%E4%BD%B3%E4%BA%A7%E5%93%81%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC%E7%AD%96%E5%88%92/" title="康乐佳产品视频脚本策划"><img class="post-bg" src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/XK2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="康乐佳产品视频脚本策划"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/18/kpower/%E5%BA%B7%E4%B9%90%E4%BD%B3%E4%BA%A7%E5%93%81%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC%E7%AD%96%E5%88%92/" title="康乐佳产品视频脚本策划">康乐佳产品视频脚本策划</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-18T07:11:02.000Z" title="发表于 2020-10-18 15:11:02">2020-10-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92/">品牌策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E5%88%92/">产品策划</a></span></div><div class="content">
+
+part1 小K跑步机产品视频拍摄1.1项目背景
+
+2019年上海体博会，康乐佳展位的现场活动以“沉浸式逛展、互动式体验”为核心理念，在创意表达上为观众模拟了一位年轻女性芭蕾舞者的日常健身活动。  
+小K跑步机是该年度推出的家用系列新品，我们把小K跑步机设计到模拟日常生活的家居场景，记录用户与产品发生的故事。
+
+
+
+
+1.2策划思路
+
+
+
+
+
+
+
+
+
+1.3部分拍摄脚本
+
+
+
+
+
+
+
+
+
+
+
+1.4成果展示
+活动推文：2019体博会 | 梦想，让快乐照亮生活 
+
+part2 KPOWER 专业力量产品TVC &amp; 教学视频拍摄2.1项目背景
+
+KMARK马克系列是由康乐佳与意大利资深健身器材设计师Termine Giuseppe 朱塞佩强强合作，倾力打造的全新科技型专业力量训练系列。  
+为配合2018年FIBO以及上海国际体育用品博览会推广，我们策划制作了KMARK专业力量系列的产品TVC视频及产品使用教学视频。
+
+
+
+
+2.2策划思路本次的产品视频拍摄，分为两个部分：使用教学视频和产品TVC视频，分别服务于产品推广和售后服务的两个应用场景，根据男女性别差异，分别安排了两位 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2020/06/20/kpower/%E4%BA%A7%E5%93%81%E7%9B%AE%E5%BD%95&amp;%E4%BA%A7%E5%93%81%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C%E6%96%87%E6%A1%88%E7%AD%96%E5%88%92/" title="产品目录&amp;产品方案手册文案策划"><img class="post-bg" src="http://www.xmklj.com/upload/2020/01/09/15785366729064scgg.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="产品目录&amp;产品方案手册文案策划"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/06/20/kpower/%E4%BA%A7%E5%93%81%E7%9B%AE%E5%BD%95&amp;%E4%BA%A7%E5%93%81%E6%96%B9%E6%A1%88%E6%89%8B%E5%86%8C%E6%96%87%E6%A1%88%E7%AD%96%E5%88%92/" title="产品目录&amp;产品方案手册文案策划">产品目录&amp;产品方案手册文案策划</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-06-20T05:28:55.000Z" title="发表于 2020-06-20 13:28:55">2020-06-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BA%B7%E4%B9%90%E4%BD%B3/">康乐佳</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92/">品牌策划</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E5%88%92/">产品策划</a></span></div><div class="content">
+
+
+我的工作：承担产品卖点提炼、产品宣传包装、平台旗舰店产品详情页梳理、产品创意性表达等
+
+
+part1 康乐佳商用产品目录&amp;新品目录
+
+项目需求以“KPOWER 健康是一种力量”为目录主题的核心诉求，针对健身房市场（包括商业健身房、俱乐部、酒店、房地产会所、企事业、社区），提供从健身房规划、产品选配、场地规划设计、经营指导、会员服务的系统解决方案，通过系统性的支持和完善的产品线，帮助合作伙伴和经销商更好地拓展市场，并给予有力的营销支持和品牌服务。
+
+
+部分文案展示
+
+
+
+
+part2 康乐佳室内智能健身房手册
+
+项目需求文案撰写&amp;商业模式规划
+部分文案展示
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://yipvincent.github.io/images/icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">yipVincent</div><div class="author-info__description">用文字及思想，构造一个无bug的世界</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yipvincent"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/yipvincent" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:yipvincent@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">👨‍💼文案/策划  🧭坐标：深圳</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/06/23/Prompt%20engineering%E2%80%94%E2%80%94%E5%90%B4%E6%81%A9%E8%BE%BE%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%89/" title="Prompt engineering——吴恩达课程笔记（案例篇）"><img src="https://img.phonandroid.com/2023/02/ChatGPT-1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Prompt engineering——吴恩达课程笔记（案例篇）"/></a><div class="content"><a class="title" href="/2023/06/23/Prompt%20engineering%E2%80%94%E2%80%94%E5%90%B4%E6%81%A9%E8%BE%BE%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E6%A1%88%E4%BE%8B%E7%AF%87%EF%BC%89/" title="Prompt engineering——吴恩达课程笔记（案例篇）">Prompt engineering——吴恩达课程笔记（案例篇）</a><time datetime="2023-06-23T10:37:55.000Z" title="发表于 2023-06-23 18:37:55">2023-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/12/Prompt%20engineering%E2%80%94%E2%80%94%E5%90%B4%E6%81%A9%E8%BE%BE%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="Prompt engineering——吴恩达课程笔记"><img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.3uFelC6IsJVEOXxrnOGWIAHaE8?pid=ImgDet&amp;rs=1" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Prompt engineering——吴恩达课程笔记"/></a><div class="content"><a class="title" href="/2023/06/12/Prompt%20engineering%E2%80%94%E2%80%94%E5%90%B4%E6%81%A9%E8%BE%BE%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="Prompt engineering——吴恩达课程笔记">Prompt engineering——吴恩达课程笔记</a><time datetime="2023-06-12T09:37:55.000Z" title="发表于 2023-06-12 17:37:55">2023-06-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/23/kpower/2020%E4%B8%8A%E6%B5%B7%E4%BD%93%E5%8D%9A%E4%BC%9A%E4%BA%91%E5%B1%95%E7%9B%B4%E6%92%AD%E6%B4%BB%E5%8A%A8/" title="2020上海体博会云展直播活动"><img src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/css.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020上海体博会云展直播活动"/></a><div class="content"><a class="title" href="/2022/03/23/kpower/2020%E4%B8%8A%E6%B5%B7%E4%BD%93%E5%8D%9A%E4%BC%9A%E4%BA%91%E5%B1%95%E7%9B%B4%E6%92%AD%E6%B4%BB%E5%8A%A8/" title="2020上海体博会云展直播活动">2020上海体博会云展直播活动</a><time datetime="2022-03-23T08:21:55.000Z" title="发表于 2022-03-23 16:21:55">2022-03-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/08/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E4%BA%A7%E5%93%81%E6%8A%98%E9%A1%B5%E8%AE%BE%E8%AE%A1/" title="西贝来悦产品折页设计"><img src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/xiangqingye1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西贝来悦产品折页设计"/></a><div class="content"><a class="title" href="/2021/08/08/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E4%BA%A7%E5%93%81%E6%8A%98%E9%A1%B5%E8%AE%BE%E8%AE%A1/" title="西贝来悦产品折页设计">西贝来悦产品折页设计</a><time datetime="2021-08-08T09:19:25.000Z" title="发表于 2021-08-08 17:19:25">2021-08-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/05/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5%E8%AE%BE%E8%AE%A1/" title="西贝来悦产品详情页设计"><img src="https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/xiangqingye1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西贝来悦产品详情页设计"/></a><div class="content"><a class="title" href="/2021/08/05/westgood/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5%E8%AE%BE%E8%AE%A1/" title="西贝来悦产品详情页设计">西贝来悦产品详情页设计</a><time datetime="2021-08-05T10:11:57.000Z" title="发表于 2021-08-05 18:11:57">2021-08-05</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/chatgpt/"><span class="card-category-list-name">chatgpt</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BA%B7%E4%B9%90%E4%BD%B3/"><span class="card-category-list-name">康乐佳</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6/"><span class="card-category-list-name">西贝来悦</span><span class="card-category-list-count">3</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/chatgpt/" style="font-size: 1.22em; color: rgb(157, 195, 120)">chatgpt</a><a href="/tags/Prompt-engineering/" style="font-size: 1.22em; color: rgb(84, 178, 176)">Prompt engineering</a><a href="/tags/%E5%BA%B7%E4%B9%90%E4%BD%B3/" style="font-size: 1.38em; color: rgb(117, 164, 100)">康乐佳</a><a href="/tags/%E6%B4%BB%E5%8A%A8%E7%AD%96%E5%88%92/" style="font-size: 1.15em; color: rgb(59, 179, 62)">活动策划</a><a href="/tags/%E5%93%81%E7%89%8C%E7%AD%96%E5%88%92/" style="font-size: 1.45em; color: rgb(121, 199, 36)">品牌策划</a><a href="/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E5%88%92/" style="font-size: 1.38em; color: rgb(56, 160, 175)">产品策划</a><a href="/tags/%E6%96%B0%E5%93%81%E6%8E%A8%E5%B9%BF/" style="font-size: 1.15em; color: rgb(137, 177, 8)">新品推广</a><a href="/tags/%E8%A5%BF%E8%B4%9D%E6%9D%A5%E6%82%A6/" style="font-size: 1.3em; color: rgb(12, 19, 0)">西贝来悦</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-06-24T14:26:50.373Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://yippic.oss-cn-shenzhen.aliyuncs.com/picbed/indextopimg.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By yipVincent</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = []
+        sub.unshift(data.hitokoto, from)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = data.hitokoto
+      }
+    })
+}
+typedJSFn.run(subtitleType)
+</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script></div></body></html>
